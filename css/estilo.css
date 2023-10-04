@@ -11,10 +11,12 @@ body {
     color: var(--third-color);
     background-color: #ccc;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    font-size: 62.5%;
 }
 
 .main-header {
-    width: 260px;
+    flex: 26rem;
     background-color: var(--secund-color);
 }
 
