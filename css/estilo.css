@@ -112,7 +112,8 @@ a {
     background-color: transparent;
 }
 
-.main-nav ul a:hover {
+.main-nav ul a:hover,
+.main-nav ul a:focus {
     background: var(--background-color);
     padding-right: 1rem;
 
