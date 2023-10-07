@@ -1,8 +1,8 @@
 :root {
     --primary-color: #ff7833;
-    --secund-color: #313338;
-    --third-color: #e7e7e7;
+    --secondary-color: #313338;
     --background-color: #444856;
+    --secondary-color-dark: #23252d;
 }
 
 html {
@@ -12,7 +12,7 @@ html {
 body {
     display: flex;
     margin: 0;
-    color: var(--third-color);
+    color: #e7e7e7;
     background-color: #ccc;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     min-height: 100vh;
@@ -76,7 +76,7 @@ kbd {
 
 .main-header {
     flex: 0 0 26rem;
-    background-color: var(--secund-color);
+    background-color: var(--secondary-color);
 }
 
 .main {
@@ -130,7 +130,7 @@ a {
 
 .card {
     max-width: 740px;
-    background-color: var(--secund-color);
+    background-color: var(--secondary-color);
     padding: 0;
 }
 
@@ -159,6 +159,10 @@ a {
     justify-content: space-between;
 }
 
+.row .row {
+    padding-top: 0;
+}
+
 .row>* {
     /* flex-grow: 1;
     flex-shrink: 0;
@@ -179,10 +183,46 @@ a {
     border-bottom: 2px solid;
 }
 
-.roman{
+.roman {
     list-style-type: upper-roman;
 }
 
-.list-emoji{
+.list-emoji {
     list-style-type: "\1F642";
+}
+
+input,
+label,
+textarea,
+select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+input,
+textarea,
+select {
+    background-color: #ccc;
+    padding: 1.2rem;
+    border-radius: 5px;
+    margin-bottom: 1.6rem;
+    border: 0;
+}
+
+.btn {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color-dark);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--secondary-color-dark);
 }
