@@ -3,6 +3,8 @@
     --secondary-color: #313338;
     --background-color: #444856;
     --secondary-color-dark: #23252d;
+
+    --default-gap: 3rem;
 }
 
 html {
@@ -154,7 +156,7 @@ a {
 
 .row {
     display: flex;
-    gap: 3rem;
+    gap: var(--default-gap);
     padding-top: 1.5rem;
     justify-content: space-between;
 }
@@ -200,7 +202,8 @@ select {
     box-sizing: border-box;
 }
 
-input[type="radio"] {
+input[type="radio"],
+input[type="checkbox"] {
     width: auto;
 }
 
@@ -225,4 +228,22 @@ select {
 .btn:hover,
 .btn:focus {
     background-color: var(--secondary-color-dark);
+}
+
+.form-quiz {
+    width: calc(50% - (var(--default-gap)/2));
+}
+
+.btn-stroke {
+    background: transparent;
+}
+
+.btn-reset {
+    cursor: pointer;
+}
+
+.btn-reset:hover,
+.btn-reset:focus {
+    background-color: red;
+    color: white;
 }
