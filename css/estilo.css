@@ -223,6 +223,12 @@ select {
     color: white;
     font-size: 1.2rem;
     cursor: pointer;
+    padding: 0.8em 1.2em;
+    border-radius: 5px;
+}
+
+.btn+.btn {
+    margin-left: 2rem;
 }
 
 .btn:hover,
@@ -238,12 +244,23 @@ select {
     background: transparent;
 }
 
-.btn-reset {
-    cursor: pointer;
-}
-
 .btn-reset:hover,
 .btn-reset:focus {
+    cursor: pointer;
     background-color: red;
     color: white;
+}
+
+.btn-big {
+    font-size: 1.6rem;
+}
+
+.btn-full {
+    display: inline-block;
+    width: 100%;
+}
+
+.btn-full+.btn-full {
+    margin-left: 0;
+    margin-top: 1.5rem;
 }
