@@ -137,6 +137,28 @@ a {
     padding: .4rem 0;
 }
 
+.link-icon{
+    display:inline-block;
+    margin-right: 3rem;
+    transition: color .3s;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.link-icon svg{
+    width: 3rem;
+    height: 3rem;
+    fill: currentColor;
+    vertical-align: middle;
+    display:inline-block;
+    margin-right: 1rem;
+}
+
+.link-icon:hover{
+    color: var(--primary-color);
+}
+    
+
 .card {
     max-width: 740px;
     background-color: var(--secondary-color);
